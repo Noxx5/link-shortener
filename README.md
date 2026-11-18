@@ -1,6 +1,6 @@
 # Link Shortener
 
-[![CI](https://github.com/Noxx5/link_shortener/actions/workflows/ci.yml/badge.svg)](https://github.com/Noxx5/link_shortener/actions/workflows/ci.yml)
+[![CI](https://github.com/Noxx5/link-shortener/actions/workflows/ci.yml/badge.svg)](https://github.com/Noxx5/link-shortener/actions/workflows/ci.yml)
 
 Shorten long URLs and track clicks. Built with Next.js, Prisma and PostgreSQL, covered by unit, integration and end-to-end tests.
 
@@ -25,7 +25,7 @@ Next.js (App Router, Server Actions, Route Handlers) · TypeScript · Tailwind C
 Requirements: Node.js 20.19+ and a PostgreSQL database (for example a free Neon project or a local installation).
 
 ```bash
-git clone https://github.com/Noxx5/link_shortener.git
+git clone https://github.com/Noxx5/link-shortener.git
 cd REPO
 npm install
 ```
