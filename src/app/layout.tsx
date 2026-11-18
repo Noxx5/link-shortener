@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Figtree } from "next/font/google";
-import "./globals.css";
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+import { Figtree, Geist, Geist_Mono } from "next/font/google";
+import React from "react";
+import "./globals.css";
 
 const figtree = Figtree({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -21,7 +22,11 @@ export const metadata: Metadata = {
     "Kurze Links mit Klick-Statistik, gebaut mit Next.js, Prisma und PostgreSQL.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="de"
