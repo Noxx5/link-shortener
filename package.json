@@ -10,11 +10,11 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:int": "dotenv -e .env.test -- vitest run --config vitest.integration.config.ts",
-    "test:e2e": "dotenv -e .env.test -- playwright test",
-    "start:test": "dotenv -e .env.test -- npm run build && dotenv -e .env.test -- next start -p 3100",
-    "db:test:migrate": "dotenv -e .env.test -- prisma migrate deploy",
-    "db:prod:migrate": "dotenv -e .env.prod-db -- prisma migrate deploy"
+    "test:int": "npx dotenv-cli -e .env.test -- vitest run --config vitest.integration.config.ts",
+    "test:e2e": "npx dotenv-cli -e .env.test -- playwright test",
+    "start:test": "npx dotenv-cli -e .env.test -- npm run build && npx dotenv-cli -e .env.test -- next start -p 3100",
+    "db:test:migrate": "npx dotenv-cli -e .env.test -- prisma migrate deploy",
+    "db:prod:migrate": "npx dotenv-cli -e .env.prod-db -- prisma migrate deploy"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
