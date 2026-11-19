@@ -21,7 +21,7 @@ test("kürzt einen Link, leitet weiter und zählt den Klick", async ({
   // Der Klick wird nach der Antwort gespeichert, deshalb kurz wiederholen
   await expect(async () => {
     await page.reload();
-    await expect(page.getByText("1 Klicks")).toBeVisible();
+    await expect(page.getByText("1 Klick", { exact: true })).toBeVisible();
   }).toPass();
 });
 
