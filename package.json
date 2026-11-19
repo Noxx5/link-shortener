@@ -10,7 +10,7 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:int": "npx dotenv-cli -e .env.test -- vitest run --config vitest.integration.config.ts",
+    "test:int": "npx dotenv-cli -e .env.test -- vitest run --config vitest.integration.config.mts",
     "test:e2e": "npx dotenv-cli -e .env.test -- playwright test",
     "start:test": "npx dotenv-cli -e .env.test -- npm run build && npx dotenv-cli -e .env.test -- next start -p 3100",
     "db:test:migrate": "npx dotenv-cli -e .env.test -- prisma migrate deploy",
@@ -42,12 +42,12 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "dotenv-cli": "^11.1.0",
-    "eslint": "^9",
+    "eslint": "^10.15.0",
     "eslint-config-next": "16.4.6",
     "prisma": "^7.10.1",
     "tailwindcss": "^4.3.5",
     "tsx": "^4.23.15",
-    "typescript": "^5",
+    "typescript": "^6.0.3",
     "vitest": "^5.1.0"
   }
 }
